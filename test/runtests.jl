@@ -46,6 +46,7 @@ end
 
 # Show the host platform
 @show  SuperLU_DIST_jll.host_platform
+@show  names(SuperLU_DIST_jll)
 
 @testset "int32" begin
     int32=true
