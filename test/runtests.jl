@@ -1,6 +1,10 @@
 using Test, SuperLU_DIST_jll
 # this runs tests that are basically the same as in the SuperLU_DIST package itself, but with the JLL package
 
+# Show the host platform
+@show  SuperLU_DIST_jll.host_platform
+@show  names(SuperLU_DIST_jll)
+
 """
 Runs a test
 """
@@ -46,10 +50,6 @@ function deactivate_multithreading(cmd::Cmd)
 
     return cmd
 end
-
-# Show the host platform
-@show  SuperLU_DIST_jll.host_platform
-@show  names(SuperLU_DIST_jll)
 
 @testset "int32" begin
     int32=true
