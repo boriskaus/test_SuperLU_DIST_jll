@@ -15,6 +15,9 @@ function test_pdtest(; cores=1, r=1, c=1, s=1, b=2, x=8, m=20, int32=true)
 
     cmd = `$mpirun -n $cores $exe -r $r -c $c -s $s -b $b -x $x -m $m -f $file`
     
+    # Very important to deactivate this - of not all kinds of issues occur
+    cmd = deactivate_multithreading(cmd)
+
     r = run(cmd)
     return  r
 end
