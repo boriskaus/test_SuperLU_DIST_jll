@@ -13,3 +13,8 @@ julia build_tarballs.jl --debug --verbose --deploy="boriskaus/LibSuperLU_DIST_jl
 ```
 4. Note that if you generate a release with the same tag twice (because you are testing stuff, or changing compiler), you'll need to delete the release first on the github page.
 
+
+
+Once you are happy with the locally compiled version, you can even use this as a dependency in another package (say `PETSc_jll`) and do tests for that, before uploading it to Yggdrasil. This is described on the [BinaryBuilder help](https://docs.binarybuilder.org/stable/FAQ/#Can-I-publish-a-JLL-package-locally-without-going-through-Yggdrasil?).
+
+This simplifies the overall workflow.
