@@ -1,4 +1,6 @@
 # test_SuperLU_DIST_jll.jl
+[![CI](https://github.com/boriskaus/test_SuperLU_DIST_jll/actions/workflows/perform_tests.yml/badge.svg)](https://github.com/boriskaus/test_SuperLU_DIST_jll/actions/workflows/perform_tests.yml)
+
 This uses CI to test the locally installed [SuperLU_DIST_jll](https://github.com/boriskaus/LibSuperLU_DIST_jll.jl) package, before I deploy it on Yggdrasil. 
 
 
