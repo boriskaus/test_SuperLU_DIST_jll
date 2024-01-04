@@ -44,7 +44,8 @@ function deactivate_multithreading(cmd::Cmd)
     return cmd
 end
 
-
+# Show the host platform
+@show  SuperLU_DIST_jll.host_platform
 
 @testset "int32" begin
     int32=true
