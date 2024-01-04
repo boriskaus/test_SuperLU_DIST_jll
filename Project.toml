@@ -1,0 +1,8 @@
+name = "test_SuperLU_DIST_jll"
+uuid = "24499e6e-3835-4ad5-be5c-4889ec8acb25"
+authors = ["Boris Kaus <kaus@uni-mainz.de>"]
+version = "0.1.0"
+
+[deps]
+SuperLU_DIST_jll = "9a1356b0-3c82-5da3-b77c-7c198e8bd7ab"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
