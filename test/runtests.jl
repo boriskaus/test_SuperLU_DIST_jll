@@ -1,5 +1,11 @@
-using Test, SuperLU_DIST_jll
+using Test, Pkg
 # this runs tests that are basically the same as in the SuperLU_DIST package itself, but with the JLL package
+
+# ensure that we use the correct version of the package 
+Pkg.add(url="https://github.com/boriskaus/LibSuperLU_DIST_jll.jl")
+
+using SuperLU_DIST_jll
+
 
 # Show the host platform
 @show  SuperLU_DIST_jll.host_platform
